@@ -1,0 +1,4 @@
+CinemaApp.Activities.MainActivity, CinemaApp;md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity
+CinemaApp.Activities.MainActivity, CinemaApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity
+CinemaApp.Activities.MainActivity;md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity
+cinemaapp.activities.MainActivity;md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity
