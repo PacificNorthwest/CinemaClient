@@ -3,17 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:id="@+id/root">
-  <Button
-    android:id="@+id/connectButton"
-    android:layout_gravity="left"
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    android:text="Connect!"/>
-  <TextView
-    android:id="@+id/textView"
-    android:gravity="left"
-    android:layout_height ="wrap_content"
-    android:layout_width="match_parent"
-    android:textSize="30sp"/>
 </LinearLayout>

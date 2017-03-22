@@ -12,13 +12,10 @@ using Android.Widget;
 
 namespace CinemaApp.Model
 {
-    class Movie
+    class Session
     {
         public int ID { get; set; }
-        public string Title { get; set; }
-        public string Director { get; set; }
-        public bool Is3D { get; set; }
-        public List<Day> ShowDays { get; set; } = new List<Day>();
-        public byte[] Poster { get; set; }
+        public string Time { get; set; }
+        public int Hall { get; set; }
     }
 }

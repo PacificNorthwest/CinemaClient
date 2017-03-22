@@ -11,40 +11,27 @@ namespace CinemaApp.Activities
     [Activity(Label = "CinemaApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        private Button _connectButton;
-        private TextView _textView;
         private List<Movie> _movies;
+        private LinearLayout _root;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.Main);
             Initialize();
+            Populate();
         }
 
         private void Initialize()
         {
-            _connectButton = FindViewById<Button>(Resource.Id.connectButton);
-            _textView = FindViewById<TextView>(Resource.Id.textView);
-            _connectButton.Click += ConnectButton_Click;
+            _root = FindViewById<LinearLayout>(Resource.Id.root);
         }
 
-        private void ConnectButton_Click(object sender, System.EventArgs e)
+        private void Populate()
         {
-            try
-            {
-                _movies = ServerRequest.LoadMovieList();
-                PrintData();
-            }
-            catch(Exception ex)
-            {
-                _textView.Text = ex.ToString();
-            }
-        }
+            _movies = ServerRequest.LoadMovieList();
 
-        private void PrintData()
-        {
-            _textView.Text = $"Title: {_movies[0].Title}\nDirector: {_movies[0].Director}\n3D: {_movies[0].Is3D}\nDate: {_movies[0].Date.ToString("dd MM yyyy")}\nTime: {_movies[0].Time.ToString("hh:mm")}";
+
         }
     }
 }
