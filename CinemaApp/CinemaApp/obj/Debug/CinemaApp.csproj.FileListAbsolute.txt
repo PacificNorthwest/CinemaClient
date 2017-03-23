@@ -41,5 +41,6 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\drawable\lalaland.jpg
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb

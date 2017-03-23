@@ -12,7 +12,6 @@ namespace CinemaApp.Activities
     public class MainActivity : Activity
     {
         private List<Movie> _movies;
-        private LinearLayout _root;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -24,7 +23,6 @@ namespace CinemaApp.Activities
 
         private void Initialize()
         {
-            _root = FindViewById<LinearLayout>(Resource.Id.root);
         }
 
         private void Populate()

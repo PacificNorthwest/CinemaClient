@@ -47,6 +47,9 @@ namespace CinemaApp
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int lalaland = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -60,8 +63,14 @@ namespace CinemaApp
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050001
+			public const int poster = 2131034113;
+			
 			// aapt resource value: 0x7f050000
 			public const int root = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int title = 2131034114;
 			
 			static Id()
 			{
