@@ -4,6 +4,7 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\mscorlib.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Core.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.dll
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Windows.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.Linq.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\Newtonsoft.Json.dll
