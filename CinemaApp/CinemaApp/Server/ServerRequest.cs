@@ -18,9 +18,9 @@ namespace CinemaApp.Server
 {
     class ServerRequest
     {
-        public static List<Movie> LoadMovieList()
+        public static void LoadMovieList()
         {
-            return JsonConvert.DeserializeObject<List<Movie>>(SendRequest());
+            Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(SendRequest());
         }
 
         private static string SendRequest()

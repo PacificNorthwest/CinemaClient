@@ -2,59 +2,67 @@
 using Android.Widget;
 using Android.OS;
 using System.Collections.Generic;
-using CinemaApp.Model;
 using CinemaApp.Server;
 using System;
 using Android.Views;
 using System.IO;
 using Android.Graphics;
 using System.Threading;
+using Newtonsoft.Json;
+using Android.Content;
+using CinemaApp.Model;
+using Java.IO;
 
 namespace CinemaApp.Activities
 {
     [Activity(Label = "CinemaApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        private List<Model.Movie> _movies;
         private LinearLayout _root;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.Main);
-        }
-
-        public override void OnWindowFocusChanged(bool hasFocus)
-        {
-            base.OnWindowFocusChanged(hasFocus);
-            if (hasFocus)
-                new Thread(Initialize).Start();
+            new Thread(Initialize).Start();
         }
 
         private void Initialize()
         {
             _root = FindViewById<LinearLayout>(Resource.Id.root);
-            _movies = ServerRequest.LoadMovieList();
+            ServerRequest.LoadMovieList();
             RunOnUiThread(Populate);
         }
 
         private void Populate()
         {
             LinearLayout row = null;
-            for (int i = 0; i < _movies.Count; i++)
+            for (int i = 0; i < Schedule.Movies.Count; i++)
             {
                 if (i % 2 == 0)
                     row = CreateNewRow();
                 RelativeLayout container = CreateMovieContainer();
-                ImageView poster = CreatePoster(_movies[i].Poster);
-                TextView title = CreateTitle(_movies[i].Title);
+                ImageView poster = CreatePoster(Schedule.Movies[i].Poster);
+                TextView title = CreateTitle(Schedule.Movies[i].Title);
                 container.AddView(poster);
                 container.AddView(title);
+                container.Click += Movie_Click;
                 row?.AddView(container);
-                if (i % 2 == 1 || i == _movies.Count - 1)
+                if (i % 2 == 1 || i == Schedule.Movies.Count - 1)
                     _root.AddView(row);
             }
             FindViewById<RelativeLayout>(Resource.Id.loadingPanel).Visibility = ViewStates.Gone;
+        }
+
+        private void Movie_Click(object sender, EventArgs e)
+        {
+            View poster = (sender as RelativeLayout).GetChildAt(0);
+            string title = ((sender as RelativeLayout).GetChildAt(1) as TextView).Text;
+            poster.TransitionName = "Poster";
+            ActivityOptions options = ActivityOptions.MakeSceneTransitionAnimation(this, poster, "Poster");
+            Intent intent = new Intent(this, typeof(MoviePageActivity));
+            intent.PutExtra("MovieID", Schedule.GetMovieByTitle(title).ID);
+            StartActivity(intent, options.ToBundle());
         }
 
         private LinearLayout CreateNewRow()

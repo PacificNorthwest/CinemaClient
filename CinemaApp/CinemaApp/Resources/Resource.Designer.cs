@@ -63,6 +63,9 @@ namespace CinemaApp
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050002
+			public const int background = 2131034114;
+			
 			// aapt resource value: 0x7f050001
 			public const int loadingPanel = 2131034113;
 			
@@ -84,6 +87,9 @@ namespace CinemaApp
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int MoviePageLayout = 2130903041;
 			
 			static Layout()
 			{
