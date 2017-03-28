@@ -19,6 +19,7 @@ namespace CinemaApp.Activities
     {
         private Model.Movie _movie;
         private ImageView _background;
+        private TextView _textViewTitle;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,6 +33,8 @@ namespace CinemaApp.Activities
         {
             _movie = Schedule.GetMovieByID(Intent.GetIntExtra("MovieID", 0));
             _background = FindViewById<ImageView>(Resource.Id.background);
+            _textViewTitle = FindViewById<TextView>(Resource.Id.textViewTitle);
+            _textViewTitle.Text = _movie.Title;
             _background.SetImageBitmap(BitmapFactory.DecodeByteArray(_movie.Poster, 0, _movie.Poster.Length));
         }
     }

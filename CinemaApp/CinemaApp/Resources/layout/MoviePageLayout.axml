@@ -4,9 +4,21 @@
     android:layout_height="match_parent">
   <ImageView
     android:id="@+id/background"
-  android:layout_height="match_parent"
-  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
     android:scaleType="centerCrop"
-  android:transitionName="Poster"/>
+    android:transitionName="Poster"/>
+  <LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+  >
+    <TextView
+      android:id="@+id/textViewTitle"
+      android:layout_gravity ="left"
+      android:textSize="30sp"
+      android:textColor="@android:color/white"
+      android:text="Title"/>
+  
+  </LinearLayout>
 
 </RelativeLayout>

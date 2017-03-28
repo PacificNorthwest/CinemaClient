@@ -18,6 +18,7 @@ public final class R {
         public static final int background=0x7f050002;
         public static final int loadingPanel=0x7f050001;
         public static final int root=0x7f050000;
+        public static final int textViewTitle=0x7f050003;
     }
     public static final class layout {
         public static final int main=0x7f030000;

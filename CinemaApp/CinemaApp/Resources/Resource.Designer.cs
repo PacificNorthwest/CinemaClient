@@ -72,6 +72,9 @@ namespace CinemaApp
 			// aapt resource value: 0x7f050000
 			public const int root = 2131034112;
 			
+			// aapt resource value: 0x7f050003
+			public const int textViewTitle = 2131034115;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
