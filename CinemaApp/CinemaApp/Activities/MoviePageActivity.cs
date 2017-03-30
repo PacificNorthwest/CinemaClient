@@ -11,6 +11,11 @@ using Android.Views;
 using Android.Widget;
 using Android.Graphics;
 using CinemaApp.Model;
+using Android.Transitions;
+using CinemaApp.ExtensionMethods;
+using Android.Graphics.Drawables;
+using Android.Text;
+using Android.Text.Style;
 
 namespace CinemaApp.Activities
 {
@@ -27,6 +32,7 @@ namespace CinemaApp.Activities
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.MoviePageLayout);
             Initialize();
+            Animate();
         }
 
         private void Initialize()
@@ -34,8 +40,17 @@ namespace CinemaApp.Activities
             _movie = Schedule.GetMovieByID(Intent.GetIntExtra("MovieID", 0));
             _background = FindViewById<ImageView>(Resource.Id.background);
             _textViewTitle = FindViewById<TextView>(Resource.Id.textViewTitle);
+            _textViewTitle.PaintFlags = _textViewTitle.PaintFlags | PaintFlags.UnderlineText;
             _textViewTitle.Text = _movie.Title;
-            _background.SetImageBitmap(BitmapFactory.DecodeByteArray(_movie.Poster, 0, _movie.Poster.Length));
+            _background.SetImageBitmap(BitmapFactory.DecodeByteArray(_movie.Poster, 0, _movie.Poster.Length).AddGradient());
+            
+        }
+
+        private void Animate()
+        {
+            Fade fade = new Fade();
+            fade.SetDuration(500);
+            Window.EnterTransition = fade;
         }
     }
 }

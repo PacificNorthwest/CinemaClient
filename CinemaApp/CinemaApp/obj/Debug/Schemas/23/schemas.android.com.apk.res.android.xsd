@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>26.03.2017 18:54:51</xs:documentation>
+    <xs:documentation>30.03.2017 17:18:04</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -775,6 +775,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -1408,6 +1409,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2080,6 +2082,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2442,6 +2445,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -2755,6 +2759,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3378,6 +3383,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3695,6 +3701,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4028,6 +4035,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4304,6 +4312,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4557,6 +4566,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5128,6 +5138,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5545,6 +5556,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5928,6 +5940,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6366,6 +6379,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6679,6 +6693,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6992,6 +7007,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7345,6 +7361,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7658,6 +7675,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8081,6 +8099,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8450,6 +8469,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8727,6 +8747,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -9162,6 +9183,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9571,6 +9593,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10098,6 +10121,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10563,6 +10587,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10998,6 +11023,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -11609,6 +11635,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11844,6 +11871,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12079,6 +12107,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12314,6 +12343,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12549,6 +12579,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12784,6 +12815,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13019,6 +13051,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13254,6 +13287,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13683,6 +13717,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13945,6 +13980,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14180,6 +14216,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14415,6 +14452,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14650,6 +14688,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14925,6 +14964,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15160,6 +15200,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -15473,6 +15514,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15748,6 +15790,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16074,6 +16117,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16309,6 +16353,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16764,6 +16809,7 @@
             <xs:enumeration value="@id/background" />
             <xs:enumeration value="@id/loadingPanel" />
             <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -16840,6 +16886,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17185,6 +17232,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17515,6 +17563,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18078,6 +18127,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18399,6 +18449,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18794,6 +18845,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19149,6 +19201,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19400,6 +19453,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19625,28 +19679,1103 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
-  <xs:attribute name="layout_gravity">
+  <xs:attribute name="layout_above">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Positions the bottom edge of this view above the given anchor view ID. Accommodates bottom margin of this view and top margin of anchor view.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="bottom" />
-            <xs:enumeration value="center" />
-            <xs:enumeration value="center_horizontal" />
-            <xs:enumeration value="center_vertical" />
-            <xs:enumeration value="clip_horizontal" />
-            <xs:enumeration value="clip_vertical" />
-            <xs:enumeration value="end" />
-            <xs:enumeration value="fill" />
-            <xs:enumeration value="fill_horizontal" />
-            <xs:enumeration value="fill_vertical" />
-            <xs:enumeration value="left" />
-            <xs:enumeration value="right" />
-            <xs:enumeration value="start" />
-            <xs:enumeration value="top" />
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignBaseline">
+    <xs:annotation>
+      <xs:documentation>Positions the baseline of this view on the baseline of the given anchor view ID.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignBottom">
+    <xs:annotation>
+      <xs:documentation>Makes the bottom edge of this view match the bottom edge of the given anchor view ID. Accommodates bottom margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignEnd">
+    <xs:annotation>
+      <xs:documentation>Makes the end edge of this view match the end edge of the given anchor view ID. Accommodates end margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignLeft">
+    <xs:annotation>
+      <xs:documentation>Makes the left edge of this view match the left edge of the given anchor view ID. Accommodates left margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentBottom">
+    <xs:annotation>
+      <xs:documentation>If true, makes the bottom edge of this view match the bottom edge of the parent. Accommodates bottom margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentEnd">
+    <xs:annotation>
+      <xs:documentation>If true, makes the end edge of this view match the end edge of the parent. Accommodates end margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentLeft">
+    <xs:annotation>
+      <xs:documentation>If true, makes the left edge of this view match the left edge of the parent. Accommodates left margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentRight">
+    <xs:annotation>
+      <xs:documentation>If true, makes the right edge of this view match the right edge of the parent. Accommodates right margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentStart">
+    <xs:annotation>
+      <xs:documentation>If true, makes the start edge of this view match the start edge of the parent. Accommodates start margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignParentTop">
+    <xs:annotation>
+      <xs:documentation>If true, makes the top edge of this view match the top edge of the parent. Accommodates top margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignRight">
+    <xs:annotation>
+      <xs:documentation>Makes the right edge of this view match the right edge of the given anchor view ID. Accommodates right margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignStart">
+    <xs:annotation>
+      <xs:documentation>Makes the start edge of this view match the start edge of the given anchor view ID. Accommodates start margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignTop">
+    <xs:annotation>
+      <xs:documentation>Makes the top edge of this view match the top edge of the given anchor view ID. Accommodates top margin.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_alignWithParentIfMissing">
+    <xs:annotation>
+      <xs:documentation>If set to true, the parent will be used as the anchor when the anchor cannot be be found for layout_toLeftOf, layout_toRightOf, etc.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_below">
+    <xs:annotation>
+      <xs:documentation>Positions the top edge of this view below the given anchor view ID. Accommodates top margin of this view and bottom margin of anchor view.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_centerHorizontal">
+    <xs:annotation>
+      <xs:documentation>If true, centers this child horizontally within its parent.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_centerInParent">
+    <xs:annotation>
+      <xs:documentation>If true, centers this child horizontally and vertically within its parent.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_centerVertical">
+    <xs:annotation>
+      <xs:documentation>If true, centers this child vertically within its parent.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="false" />
+            <xs:enumeration value="true" />
+            <xs:enumeration value="?android:attr/alertDialogCenterButtons" />
+            <xs:enumeration value="?android:attr/backgroundDimEnabled" />
+            <xs:enumeration value="?android:attr/isLightTheme" />
+            <xs:enumeration value="?android:attr/panelMenuIsCompact" />
+            <xs:enumeration value="?android:attr/windowActionBar" />
+            <xs:enumeration value="?android:attr/windowActionBarOverlay" />
+            <xs:enumeration value="?android:attr/windowActionModeOverlay" />
+            <xs:enumeration value="?android:attr/windowActivityTransitions" />
+            <xs:enumeration value="?android:attr/windowAllowEnterTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowAllowReturnTransitionOverlap" />
+            <xs:enumeration value="?android:attr/windowCloseOnTouchOutside" />
+            <xs:enumeration value="?android:attr/windowContentTransitions" />
+            <xs:enumeration value="?android:attr/windowDisablePreview" />
+            <xs:enumeration value="?android:attr/windowEnableSplitTouch" />
+            <xs:enumeration value="?android:attr/windowFullscreen" />
+            <xs:enumeration value="?android:attr/windowIsFloating" />
+            <xs:enumeration value="?android:attr/windowIsTranslucent" />
+            <xs:enumeration value="?android:attr/windowNoDisplay" />
+            <xs:enumeration value="?android:attr/windowNoTitle" />
+            <xs:enumeration value="?android:attr/windowOverscan" />
+            <xs:enumeration value="?android:attr/windowSharedElementsUseOverlay" />
+            <xs:enumeration value="?android:attr/windowShowWallpaper" />
+            <xs:enumeration value="?android:attr/windowSwipeToDismiss" />
+            <xs:enumeration value="?android:attr/windowTranslucentNavigation" />
+            <xs:enumeration value="?android:attr/windowTranslucentStatus" />
           </xs:restriction>
         </xs:simpleType>
       </xs:union>
@@ -19974,14 +21103,314 @@
       </xs:union>
     </xs:simpleType>
   </xs:attribute>
-  <xs:attribute name="layout_weight">
+  <xs:attribute name="layout_toEndOf">
     <xs:annotation>
-      <xs:documentation></xs:documentation>
+      <xs:documentation>Positions the start edge of this view to the end of the given anchor view ID. Accommodates start margin of this view and end margin of anchor view.</xs:documentation>
     </xs:annotation>
     <xs:simpleType>
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
-          <xs:restriction base="xs:string" />
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_toLeftOf">
+    <xs:annotation>
+      <xs:documentation>Positions the right edge of this view to the left of the given anchor view ID. Accommodates right margin of this view and left margin of anchor view.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_toRightOf">
+    <xs:annotation>
+      <xs:documentation>Positions the left edge of this view to the right of the given anchor view ID. Accommodates left margin of this view and right margin of anchor view.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="layout_toStartOf">
+    <xs:annotation>
+      <xs:documentation>Positions the end edge of this view to the start of the given anchor view ID. Accommodates end margin of this view and start margin of anchor view.</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="@id/background" />
+            <xs:enumeration value="@id/loadingPanel" />
+            <xs:enumeration value="@id/root" />
+            <xs:enumeration value="@id/textViewTitle" />
+            <xs:enumeration value="@android:id/accessibilityActionContextClick" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollRight" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollToPosition" />
+            <xs:enumeration value="@android:id/accessibilityActionScrollUp" />
+            <xs:enumeration value="@android:id/accessibilityActionShowOnScreen" />
+            <xs:enumeration value="@android:id/addToDictionary" />
+            <xs:enumeration value="@android:id/background" />
+            <xs:enumeration value="@android:id/button1" />
+            <xs:enumeration value="@android:id/button2" />
+            <xs:enumeration value="@android:id/button3" />
+            <xs:enumeration value="@android:id/candidatesArea" />
+            <xs:enumeration value="@android:id/checkbox" />
+            <xs:enumeration value="@android:id/closeButton" />
+            <xs:enumeration value="@android:id/content" />
+            <xs:enumeration value="@android:id/copy" />
+            <xs:enumeration value="@android:id/copyUrl" />
+            <xs:enumeration value="@android:id/custom" />
+            <xs:enumeration value="@android:id/cut" />
+            <xs:enumeration value="@android:id/edit" />
+            <xs:enumeration value="@android:id/empty" />
+            <xs:enumeration value="@android:id/extractArea" />
+            <xs:enumeration value="@android:id/hint" />
+            <xs:enumeration value="@android:id/home" />
+            <xs:enumeration value="@android:id/icon" />
+            <xs:enumeration value="@android:id/icon1" />
+            <xs:enumeration value="@android:id/icon2" />
+            <xs:enumeration value="@android:id/input" />
+            <xs:enumeration value="@android:id/inputArea" />
+            <xs:enumeration value="@android:id/inputExtractEditText" />
+            <xs:enumeration value="@android:id/keyboardView" />
+            <xs:enumeration value="@android:id/list" />
+            <xs:enumeration value="@android:id/mask" />
+            <xs:enumeration value="@android:id/message" />
+            <xs:enumeration value="@android:id/navigationBarBackground" />
+            <xs:enumeration value="@android:id/paste" />
+            <xs:enumeration value="@android:id/pasteAsPlainText" />
+            <xs:enumeration value="@android:id/primary" />
+            <xs:enumeration value="@android:id/progress" />
+            <xs:enumeration value="@android:id/redo" />
+            <xs:enumeration value="@android:id/replaceText" />
+            <xs:enumeration value="@android:id/secondaryProgress" />
+            <xs:enumeration value="@android:id/selectAll" />
+            <xs:enumeration value="@android:id/selectedIcon" />
+            <xs:enumeration value="@android:id/selectTextMode" />
+            <xs:enumeration value="@android:id/shareText" />
+            <xs:enumeration value="@android:id/startSelectingText" />
+            <xs:enumeration value="@android:id/statusBarBackground" />
+            <xs:enumeration value="@android:id/stopSelectingText" />
+            <xs:enumeration value="@android:id/summary" />
+            <xs:enumeration value="@android:id/switchInputMethod" />
+            <xs:enumeration value="@android:id/tabcontent" />
+            <xs:enumeration value="@android:id/tabhost" />
+            <xs:enumeration value="@android:id/tabs" />
+            <xs:enumeration value="@android:id/text1" />
+            <xs:enumeration value="@android:id/text2" />
+            <xs:enumeration value="@android:id/title" />
+            <xs:enumeration value="@android:id/toggle" />
+            <xs:enumeration value="@android:id/undo" />
+            <xs:enumeration value="@android:id/widget_frame" />
+          </xs:restriction>
         </xs:simpleType>
       </xs:union>
     </xs:simpleType>
@@ -20096,6 +21525,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20453,6 +21883,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -21444,6 +22875,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21691,6 +23123,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21967,6 +23400,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22242,6 +23676,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22477,6 +23912,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22712,6 +24148,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22947,6 +24384,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23182,6 +24620,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23890,6 +25329,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24142,6 +25582,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -24455,6 +25896,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -25161,6 +26603,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -25514,6 +26957,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25930,6 +27374,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26275,6 +27720,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26510,6 +27956,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27289,6 +28736,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27524,6 +28972,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27759,6 +29208,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27994,6 +29444,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28409,6 +29860,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28644,6 +30096,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29047,6 +30500,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29282,6 +30736,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -29595,6 +31050,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30273,6 +31729,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -30801,6 +32258,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -31172,6 +32630,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32358,6 +33817,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32634,6 +34094,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32960,6 +34421,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33275,6 +34737,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33510,6 +34973,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33785,6 +35249,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34020,6 +35485,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34402,6 +35868,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34637,6 +36104,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34950,6 +36418,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35263,6 +36732,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35576,6 +37046,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35889,6 +37360,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36150,6 +37622,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36385,6 +37858,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36620,6 +38094,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36855,6 +38330,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37090,6 +38566,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37499,6 +38976,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37734,6 +39212,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37969,6 +39448,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39141,6 +40621,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39966,6 +41447,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40372,6 +41854,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41122,6 +42605,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -41583,6 +43067,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41834,6 +43319,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42069,6 +43555,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42304,6 +43791,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -42617,6 +44105,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -42982,6 +44471,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -43217,6 +44707,7 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@drawable/icon" />
             <xs:enumeration value="@drawable/lalaland" />
+            <xs:enumeration value="@drawable/mask" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

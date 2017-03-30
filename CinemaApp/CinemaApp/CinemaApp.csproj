@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MoviePageActivity.cs" />
+    <Compile Include="ExtensionMethods\Extensions.cs" />
     <Compile Include="Model\Day.cs" />
     <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\Schedule.cs" />
@@ -90,9 +91,6 @@
     <None Include="Properties\AndroidManifest.xml">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\lalaland.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

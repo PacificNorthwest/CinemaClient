@@ -12,6 +12,7 @@ using Newtonsoft.Json;
 using Android.Content;
 using CinemaApp.Model;
 using Java.IO;
+using Android.Transitions;
 
 namespace CinemaApp.Activities
 {
@@ -22,9 +23,16 @@ namespace CinemaApp.Activities
 
         protected override void OnCreate(Bundle bundle)
         {
+            Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.Main);
             new Thread(Initialize).Start();
+            Animate();
+        }
+
+        private void Animate()
+        {
+            Window.ExitTransition = new Fade();
         }
 
         private void Initialize()

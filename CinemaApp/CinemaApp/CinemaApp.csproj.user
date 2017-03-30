@@ -3,5 +3,7 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.Material.Light.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
+    <SelectedDevice>5.5" Marshmallow %286.0.0%29 XXXHDPI Phone</SelectedDevice>
+    <DefaultDevice>Android_Accelerated_x86</DefaultDevice>
   </PropertyGroup>
 </Project>
