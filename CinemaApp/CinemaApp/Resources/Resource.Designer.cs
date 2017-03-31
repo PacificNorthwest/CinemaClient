@@ -47,6 +47,9 @@ namespace CinemaApp
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int videoIcon = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -63,14 +66,26 @@ namespace CinemaApp
 			// aapt resource value: 0x7f050002
 			public const int background = 2131034114;
 			
+			// aapt resource value: 0x7f050007
+			public const int description = 2131034119;
+			
 			// aapt resource value: 0x7f050001
 			public const int loadingPanel = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int mask = 2131034115;
 			
 			// aapt resource value: 0x7f050000
 			public const int root = 2131034112;
 			
-			// aapt resource value: 0x7f050003
-			public const int textViewTitle = 2131034115;
+			// aapt resource value: 0x7f050005
+			public const int textViewDetails = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int textViewTitle = 2131034116;
+			
+			// aapt resource value: 0x7f050006
+			public const int trailerButton = 2131034118;
 			
 			static Id()
 			{

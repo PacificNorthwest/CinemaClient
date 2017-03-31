@@ -43,5 +43,6 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\moviepagelayout.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\drawable\videoicon.png
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb
