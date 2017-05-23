@@ -16,5 +16,7 @@ namespace CinemaApp.Model
     {
         public DateTime Date { get; set; }
         public List<Session> Sessions { get; set; } = new List<Session>();
+
+        public override string ToString() => Date.ToString("dd.MM");
     }
 }

@@ -2,7 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
+  <View
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FF2B2C40"/>  
+  <ImageView
         android:id="@+id/background"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
@@ -13,49 +17,65 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:scaleType="centerCrop" />
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:orientation="vertical"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:minWidth="25px"
-        android:minHeight="25px">
+        android:minHeight="25px"
+        android:id="@+id/mainContainer">
+      <TextView
+          android:text="Title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textViewTitle"
+          android:layout_marginTop="230dp"
+          android:layout_marginLeft="15dp"
+          android:textSize="32sp"
+          android:textColor="@android:color/white" />
+      <TextView
+          android:id="@+id/textViewDetails"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Details"
+          android:layout_marginLeft="15dp"
+          android:textSize="16sp"
+          android:textColor="@android:color/white" />
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+          android:id="@+id/trailerButton"
+          android:layout_width="90dp"
+          android:layout_height="150dp"
+          android:scaleType="fitCenter"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="7dp"/>
         <TextView
-            android:text="Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textViewTitle"
-            android:layout_marginTop="230dp"
-            android:layout_marginLeft="15dp"
-            android:textSize="32sp"
-            android:textColor="@android:color/white" />
-        <TextView
-            android:id="@+id/textViewDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Details"
-            android:layout_marginLeft="15dp"
-            android:textSize="16sp"
-            android:textColor="@android:color/white" />
-      <LinearLayout
+          android:id="@+id/description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="7dp"
+          android:layout_marginRight="10dp"
+          android:textSize="16sp"
+          android:textColor="@android:color/white"/>
+      </RelativeLayout>
+      <Button
+        android:id="@+id/buttonBookTicket"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-          <ImageView
-            android:id="@+id/trailerButton"
-            android:layout_width="90dp"
-            android:layout_height="150dp"
-            android:scaleType="fitCenter"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="7dp"/>
-          <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:textSize="16sp"
-            android:textColor="@android:color/white"/>
-       </LinearLayout>
+        android:text="Купить билет"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="#607D8B"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"/>
     </LinearLayout>
+  </ScrollView>
+  <include layout="@layout/bookingpagelayout"/>
 </RelativeLayout>

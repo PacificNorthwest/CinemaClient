@@ -32,7 +32,7 @@ namespace CinemaApp.Activities
 
         private void Animate()
         {
-            Window.ExitTransition = new Fade();
+           Window.ExitTransition = new Fade();
         }
 
         private void Initialize()
@@ -109,6 +109,8 @@ namespace CinemaApp.Activities
             TextView titleField = new TextView(this);
             titleField.Text = title;
             titleField.TextSize = 21;
+            titleField.SetTextColor(Color.White);
+            titleField.TextAlignment = TextAlignment.Center;
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent,
                                                                                        ViewGroup.LayoutParams.WrapContent);
             layoutParams.AddRule(LayoutRules.AlignParentBottom);

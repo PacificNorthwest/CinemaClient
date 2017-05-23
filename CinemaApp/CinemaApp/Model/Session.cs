@@ -17,5 +17,6 @@ namespace CinemaApp.Model
         public int ID { get; set; }
         public string Time { get; set; }
         public int Hall { get; set; }
+        public List<Seat> BookedSeats { get; set; } = new List<Seat>();
     }
 }

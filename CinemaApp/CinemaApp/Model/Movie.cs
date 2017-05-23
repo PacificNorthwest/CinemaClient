@@ -14,6 +14,7 @@ namespace CinemaApp.Model
         public string Description { get; set; }
         public string Trailer { get; set; }
         public bool Is3D { get; set; }
+        public string IMDbRating { get; set; }
         public List<Day> ShowDays { get; set; } = new List<Day>();
         public byte[] Poster { get; set; }
     }

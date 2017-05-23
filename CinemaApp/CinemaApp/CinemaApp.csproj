@@ -56,11 +56,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activities\BookingPage.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MoviePageActivity.cs" />
+    <Compile Include="DescriptionLeadingMarginSpan2.cs" />
     <Compile Include="Model\Day.cs" />
     <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\Schedule.cs" />
+    <Compile Include="Model\Seat.cs" />
     <Compile Include="Model\Session.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,6 +75,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\MoviePageLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\BookingPageLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SeatsScheme.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -93,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\videoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SpinnerItem.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

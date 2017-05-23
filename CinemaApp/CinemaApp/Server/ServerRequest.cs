@@ -35,7 +35,7 @@ namespace CinemaApp.Server
                     using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                     {
                         string buffer = reader.ReadToEnd();
-                         return buffer;
+                        return buffer;
                     }
                 }
                 else
