@@ -59,7 +59,9 @@
     <Compile Include="Activities\BookingPage.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Activities\MoviePageActivity.cs" />
+    <Compile Include="Activities\RegistrationActivity.cs" />
     <Compile Include="DescriptionLeadingMarginSpan2.cs" />
+    <Compile Include="Model\CardInfo.cs" />
     <Compile Include="Model\Day.cs" />
     <Compile Include="Model\Movie.cs" />
     <Compile Include="Model\Schedule.cs" />
@@ -67,6 +69,8 @@
     <Compile Include="Model\Session.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\views\SeatButton.cs" />
+    <Compile Include="SecurityProvider.cs" />
     <Compile Include="Server\ServerRequest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +85,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\SeatsScheme.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RegistrationPage.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

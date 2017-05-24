@@ -41,9 +41,7 @@ namespace CinemaApp.Activities
             for (int i = 0; i < _seatsScheme.ChildCount; i++)
             {
                 _seatsScheme.GetChildAt(i).Enabled = true;
-                _seatsScheme.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.White);
-                _seatsScheme.GetChildAt(i).Click += (object sener, EventArgs e) =>
-                    { (sener as View).SetBackgroundColor(Android.Graphics.Color.LightGreen); };
+                (_seatsScheme.GetChildAt(i) as Resources.views.SeatButton).Checked = false;
 
                 if (_selectedSession.BookedSeats.Exists(s => (s.Row - 1) + (s.Number - 1) == i))
                 {

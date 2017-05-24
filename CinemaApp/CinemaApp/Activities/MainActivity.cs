@@ -16,7 +16,7 @@ using Android.Transitions;
 
 namespace CinemaApp.Activities
 {
-    [Activity(Label = "CinemaApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "CinemaApp")]
     public class MainActivity : Activity
     {
         private LinearLayout _root;

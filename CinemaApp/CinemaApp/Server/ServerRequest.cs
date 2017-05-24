@@ -20,10 +20,15 @@ namespace CinemaApp.Server
     {
         public static void LoadMovieList()
         {
-            Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(SendRequest());
+            Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(SendMovieListRequest());
         }
 
-        private static string SendRequest()
+        public static void SignUp(string email, string hash, CardInfo card)
+        {
+
+        }
+
+        private static string SendMovieListRequest()
         {
             var request = WebRequest.Create(@"http://cinemaserver.azurewebsites.net/api/movies");
             request.ContentType = "application/json";

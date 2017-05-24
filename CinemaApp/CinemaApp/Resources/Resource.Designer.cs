@@ -75,14 +75,32 @@ namespace CinemaApp
 			// aapt resource value: 0x7f05000d
 			public const int buttonBookTicket = 2131034125;
 			
+			// aapt resource value: 0x7f050014
+			public const int buttonSignUp = 2131034132;
+			
+			// aapt resource value: 0x7f050011
+			public const int card = 2131034129;
+			
+			// aapt resource value: 0x7f050010
+			public const int confirmPassword = 2131034128;
+			
+			// aapt resource value: 0x7f050013
+			public const int cvv = 2131034131;
+			
 			// aapt resource value: 0x7f050002
 			public const int dateSpinner = 2131034114;
 			
 			// aapt resource value: 0x7f05000c
 			public const int description = 2131034124;
 			
+			// aapt resource value: 0x7f050012
+			public const int expDate = 2131034130;
+			
 			// aapt resource value: 0x7f050005
 			public const int loadingPanel = 2131034117;
+			
+			// aapt resource value: 0x7f05000e
+			public const int login = 2131034126;
 			
 			// aapt resource value: 0x7f050008
 			public const int mainContainer = 2131034120;
@@ -90,11 +108,14 @@ namespace CinemaApp
 			// aapt resource value: 0x7f050007
 			public const int mask = 2131034119;
 			
+			// aapt resource value: 0x7f05000f
+			public const int password = 2131034127;
+			
 			// aapt resource value: 0x7f050004
 			public const int root = 2131034116;
 			
-			// aapt resource value: 0x7f05000e
-			public const int seats = 2131034126;
+			// aapt resource value: 0x7f050015
+			public const int seats = 2131034133;
 			
 			// aapt resource value: 0x7f050003
 			public const int sessionsGrid = 2131034115;
@@ -131,10 +152,13 @@ namespace CinemaApp
 			public const int MoviePageLayout = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int SeatsScheme = 2130903043;
+			public const int RegistrationPage = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SpinnerItem = 2130903044;
+			public const int SeatsScheme = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int SpinnerItem = 2130903045;
 			
 			static Layout()
 			{

@@ -7,481 +7,481 @@
     android:columnCount="10"
     android:layout_marginTop="30dp"
     android:id="@+id/seats">
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"
         android:layout_margin="5dp"
         android:background="@android:color/white" />
-    <Button
+    <cinemaapp.resources.views.SeatButton
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_gravity="center"

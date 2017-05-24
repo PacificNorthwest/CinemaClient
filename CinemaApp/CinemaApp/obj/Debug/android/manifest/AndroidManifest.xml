@@ -6,7 +6,8 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="CinemaApp" android:largeHeap="true" android:theme="@android:style/Theme.Material.Light.NoActionBar.Fullscreen" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="MoviePageActivity" android:name="md5508d47e4c93802eb0beedcd6d9d738d1.MoviePageActivity" />
-    <activity android:icon="@drawable/icon" android:label="CinemaApp" android:name="md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity">
+    <activity android:label="CinemaApp" android:name="md5508d47e4c93802eb0beedcd6d9d738d1.MainActivity" />
+    <activity android:icon="@drawable/icon" android:label="RegistrationActivity" android:name="md5508d47e4c93802eb0beedcd6d9d738d1.RegistrationActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
