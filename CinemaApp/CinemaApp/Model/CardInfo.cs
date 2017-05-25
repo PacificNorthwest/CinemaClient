@@ -12,10 +12,11 @@ using Android.Widget;
 
 namespace CinemaApp.Model
 {
+    [Serializable]
     class CardInfo
     {
-        public byte[] Number { get; set; }
-        public byte[] ExpDate { get; set; }
-        public byte[] CVV { get; set; }
+        public string Number { get; set; }
+        public string ExpDate { get; set; }
+        public string CVV { get; set; }
     }
 }

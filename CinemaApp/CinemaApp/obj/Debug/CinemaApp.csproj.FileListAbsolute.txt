@@ -47,5 +47,7 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\CinemaApp.csprojResolveAssemblyReference.cache
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.dll
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb

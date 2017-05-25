@@ -14,10 +14,11 @@ using CinemaApp.Server;
 using CinemaApp.Model;
 using System.IO;
 using CinemaApp;
+using Android;
 
 namespace CinemaApp.Activities
 {
-    [Activity(Label = "RegistrationActivity", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "CinemaApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class RegistrationActivity : Activity
     {
         private EditText _login;
@@ -54,15 +55,23 @@ namespace CinemaApp.Activities
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             if (_password.Text == _confirmPassword.Text)
-                SecurityProvider.ProcessUserData(_login.Text,
-                                                 _password.Text,
-                                                 _cardNumber.Text,
-                                                 _expDate.Text,
-                                                 _cvv.Text);
+            {
+                try
+                {
+                    SecurityProvider.ProcessUserData(_login.Text,
+                                                     _password.Text,
+                                                     _cardNumber.Text,
+                                                     _expDate.Text,
+                                                     _cvv.Text);
+                    Toast.MakeText(this, "Registration succesful", ToastLength.Long).Show();
+                }
+                catch (Exception ex)
+                {
+                    Toast.MakeText(this, ex.Message, ToastLength.Short).Show();
+                }
+            }
             else
                 Toast.MakeText(this, "Not matching passwords!", ToastLength.Short).Show();
         }
-
-        
     }
 }

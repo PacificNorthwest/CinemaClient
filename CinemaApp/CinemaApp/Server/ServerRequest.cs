@@ -13,22 +13,14 @@ using CinemaApp.Model;
 using System.Net;
 using System.IO;
 using Newtonsoft.Json;
+using RestSharp;
 
 namespace CinemaApp.Server
 {
     class ServerRequest
     {
+
         public static void LoadMovieList()
-        {
-            Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(SendMovieListRequest());
-        }
-
-        public static void SignUp(string email, string hash, CardInfo card)
-        {
-
-        }
-
-        private static string SendMovieListRequest()
         {
             var request = WebRequest.Create(@"http://cinemaserver.azurewebsites.net/api/movies");
             request.ContentType = "application/json";
@@ -40,12 +32,28 @@ namespace CinemaApp.Server
                     using (StreamReader reader = new StreamReader(response.GetResponseStream()))
                     {
                         string buffer = reader.ReadToEnd();
-                        return buffer;
+                        Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(buffer);
                     }
                 }
                 else
                     throw new Exception($"Connection Failed. Reason: {response.StatusCode}");
             }
+        }
+
+        public static bool SignUpNewUser(string email, string serverKey, CardInfo card)
+        {
+            var client = new RestClient(@"https://cinemaserver.azurewebsites.net");
+            var request = new RestRequest("api/accounts", Method.POST);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(JsonConvert.SerializeObject(new { Email = email,
+                                                                  Hash = serverKey,
+                                                                  CardNumber = card.Number,
+                                                                  ExpDate = card.ExpDate,
+                                                                  CVV = card.CVV }));
+
+            IRestResponse response = client.Execute(request);
+            var result = bool.Parse(JsonConvert.DeserializeObject<string>(response.Content));
+            return result;          
         }
     }
 }

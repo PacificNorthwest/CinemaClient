@@ -20,14 +20,14 @@ namespace CinemaApp
         #region Security
         public static void ProcessUserData(string login, string password, string cardNumber, string expDate, string cvv)
         {
-            byte[] pass_login_MD5 = new MD5CryptoServiceProvider()
+            byte[] localKey = new MD5CryptoServiceProvider()
                                    .ComputeHash(Encoding.UTF8.GetBytes(string.Concat(password, login)));
-            byte[] login_pass_MD5 = new MD5CryptoServiceProvider()
+            byte[] serverKey = new MD5CryptoServiceProvider()
                                    .ComputeHash(Encoding.UTF8.GetBytes(string.Concat(login, password)));
 
-            byte[] concat = new byte[pass_login_MD5.Length + login_pass_MD5.Length];
-            Array.Copy(pass_login_MD5, concat, pass_login_MD5.Length);
-            Array.Copy(login_pass_MD5, 0, concat, pass_login_MD5.Length, login_pass_MD5.Length);
+            byte[] concat = new byte[localKey.Length + serverKey.Length];
+            Array.Copy(localKey, concat, localKey.Length);
+            Array.Copy(serverKey, 0, concat, localKey.Length, serverKey.Length);
             TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider();
             tdes.Key = new MD5CryptoServiceProvider().ComputeHash(concat);
             tdes.Mode = CipherMode.ECB;
@@ -35,26 +35,29 @@ namespace CinemaApp
             ICryptoTransform crypt = tdes.CreateEncryptor();
             CardInfo card = EncryptCardInfo(cardNumber, expDate, cvv, crypt);
 
-            EncryptLocalKey(pass_login_MD5, login_pass_MD5);
+            EncryptLocalKey(localKey, serverKey);        
+            var result = Server.ServerRequest.SignUpNewUser(login, BitConverter.ToString(serverKey).Replace("-", string.Empty), card);
+            if (result) CreateUserToken(serverKey);
+            else throw new Exception("Registration failed");
         }
 
         private static CardInfo EncryptCardInfo(string number, string expDate, string cvv, ICryptoTransform crypt) =>
             new CardInfo
             {
-                Number = crypt.TransformFinalBlock
+                Number = BitConverter.ToString(crypt.TransformFinalBlock
                              (Encoding.UTF8.GetBytes(number),
-                                                     0, Encoding.UTF8.GetByteCount(number)),
-                ExpDate = crypt.TransformFinalBlock
+                                                     0, Encoding.UTF8.GetByteCount(number))).Replace("-", string.Empty),
+                ExpDate = BitConverter.ToString(crypt.TransformFinalBlock
                              (Encoding.UTF8.GetBytes(expDate),
-                                                     0, Encoding.UTF8.GetByteCount(expDate)),
-                CVV = crypt.TransformFinalBlock
+                                                     0, Encoding.UTF8.GetByteCount(expDate))).Replace("-", string.Empty),
+                CVV = BitConverter.ToString(crypt.TransformFinalBlock
                              (Encoding.UTF8.GetBytes(cvv),
-                                                     0, Encoding.UTF8.GetByteCount(cvv))
+                                                     0, Encoding.UTF8.GetByteCount(cvv))).Replace("-", string.Empty)
             };
 
         private static void EncryptLocalKey(byte[] data, byte[] key)
         {
-            var dir = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "key");
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "key.dat");
             using (FileStream stream = new FileStream(dir, FileMode.OpenOrCreate, FileAccess.ReadWrite))
             using (TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider())
             {
@@ -70,8 +73,8 @@ namespace CinemaApp
 
         private static byte[] DecryptLocalKey(byte[] key)
         {
-            var dir = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "key");
-            using (FileStream stream = new FileStream(dir, FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "key.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.Open, FileAccess.Read))
             using (TripleDESCryptoServiceProvider tdes = new TripleDESCryptoServiceProvider())
             {
                 tdes.Key = key;
@@ -83,6 +86,13 @@ namespace CinemaApp
                 stream.Close();
                 return data;
             }
+        }
+
+        private static void CreateUserToken(byte[] baseHash)
+        {
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.OpenOrCreate, FileAccess.Write))
+                stream.Write(new MD5CryptoServiceProvider().ComputeHash(baseHash), 0, 16);
         }
         #endregion
     }

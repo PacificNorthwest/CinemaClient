@@ -4,10 +4,12 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\mscorlib.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Core.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.dll
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Net.Http.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Windows.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Xml.Linq.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\Newtonsoft.Json.dll
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\RestSharp.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Threading.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Runtime.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.ComponentModel.Composition.dll
@@ -19,7 +21,6 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\asse
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Runtime.InteropServices.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Runtime.Extensions.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Reflection.Extensions.dll
-E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Net.Http.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.Runtime.Serialization.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.ServiceModel.Internals.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\android\assets\System.IO.dll

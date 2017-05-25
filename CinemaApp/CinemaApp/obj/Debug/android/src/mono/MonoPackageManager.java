@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "CinemaApp.dll" comes first in this list. */
 		"CinemaApp.dll",
 		"Newtonsoft.Json.dll",
+		"RestSharp.dll",
 		"System.Threading.dll",
 		"System.Runtime.dll",
 		"System.Collections.dll",
