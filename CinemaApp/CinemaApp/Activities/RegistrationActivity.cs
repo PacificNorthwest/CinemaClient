@@ -15,6 +15,7 @@ using CinemaApp.Model;
 using System.IO;
 using CinemaApp;
 using Android;
+using System.IO;
 
 namespace CinemaApp.Activities
 {
@@ -32,8 +33,13 @@ namespace CinemaApp.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.RegistrationPage);
-            InitializeViews();
+            if (File.Exists(Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat")))
+                LoadMainActivity();
+            else
+            {
+                SetContentView(Resource.Layout.RegistrationPage);
+                InitializeViews();
+            }
         }
 
         private void InitializeViews()
@@ -63,7 +69,7 @@ namespace CinemaApp.Activities
                                                      _cardNumber.Text,
                                                      _expDate.Text,
                                                      _cvv.Text);
-                    Toast.MakeText(this, "Registration succesful", ToastLength.Long).Show();
+                    LoadMainActivity();
                 }
                 catch (Exception ex)
                 {
@@ -72,6 +78,11 @@ namespace CinemaApp.Activities
             }
             else
                 Toast.MakeText(this, "Not matching passwords!", ToastLength.Short).Show();
+        }
+
+        private void LoadMainActivity()
+        {
+            StartActivity(new Intent(this, typeof(MainActivity)));
         }
     }
 }

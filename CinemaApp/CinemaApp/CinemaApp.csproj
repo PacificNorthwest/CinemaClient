@@ -66,6 +66,7 @@
     <Compile Include="Activities\MoviePageActivity.cs" />
     <Compile Include="Activities\RegistrationActivity.cs" />
     <Compile Include="DescriptionLeadingMarginSpan2.cs" />
+    <Compile Include="Exceptions\RegistrationFailedException.cs" />
     <Compile Include="Model\CardInfo.cs" />
     <Compile Include="Model\Day.cs" />
     <Compile Include="Model\Movie.cs" />

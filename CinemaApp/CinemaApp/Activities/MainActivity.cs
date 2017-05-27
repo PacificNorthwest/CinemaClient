@@ -32,7 +32,7 @@ namespace CinemaApp.Activities
 
         private void Animate()
         {
-           Window.ExitTransition = new Fade();
+           //Window.ExitTransition = new Fade();
         }
 
         private void Initialize()

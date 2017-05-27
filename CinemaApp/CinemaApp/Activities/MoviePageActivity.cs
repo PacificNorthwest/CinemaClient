@@ -134,7 +134,11 @@ namespace CinemaApp.Activities
         {
             if (_bookingPage.Visibility == ViewStates.Invisible)
             {
-                InitializeBookingPage();
+                try
+                {
+                    InitializeBookingPage();
+                }
+                catch { }
                 int centerX = (_buttonBookTicket.Left + _buttonBookTicket.Right) / 2;
                 int centerY = (_buttonBookTicket.Top + _buttonBookTicket.Bottom) / 2;
                 float radius = Math.Max(_mainContainer.Width, _mainContainer.Height);

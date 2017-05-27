@@ -12,6 +12,7 @@ using Android.Widget;
 using System.Security.Cryptography;
 using System.IO;
 using CinemaApp.Model;
+using CinemaApp.Exceptions;
 
 namespace CinemaApp
 {
@@ -37,8 +38,8 @@ namespace CinemaApp
 
             EncryptLocalKey(localKey, serverKey);        
             var result = Server.ServerRequest.SignUpNewUser(login, BitConverter.ToString(serverKey).Replace("-", string.Empty), card);
-            if (result) CreateUserToken(serverKey);
-            else throw new Exception("Registration failed");
+            if (result) CreateUserToken(login, serverKey);
+            else throw new RegistrationFailedException();
         }
 
         private static CardInfo EncryptCardInfo(string number, string expDate, string cvv, ICryptoTransform crypt) =>
@@ -88,11 +89,12 @@ namespace CinemaApp
             }
         }
 
-        private static void CreateUserToken(byte[] baseHash)
+        private static void CreateUserToken(string login, byte[] baseHash)
         {
             var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
-            using (FileStream stream = new FileStream(dir, FileMode.OpenOrCreate, FileAccess.Write))
-                stream.Write(new MD5CryptoServiceProvider().ComputeHash(baseHash), 0, 16);
+            using (FileStream stream = new FileStream(dir, FileMode.Create, FileAccess.Write))
+            using (StreamWriter writer = new StreamWriter(stream))
+                writer.WriteLine($"{login}:{BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(baseHash)).Replace("-", string.Empty)}");
         }
         #endregion
     }
