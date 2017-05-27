@@ -75,6 +75,7 @@
     <Compile Include="Model\Session.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\views\ExpandableTextView.cs" />
     <Compile Include="Resources\views\SeatButton.cs" />
     <Compile Include="SecurityProvider.cs" />
     <Compile Include="Server\ServerRequest.cs" />

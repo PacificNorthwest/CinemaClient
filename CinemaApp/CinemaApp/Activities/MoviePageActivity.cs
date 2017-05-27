@@ -17,6 +17,7 @@ using Android.Text;
 using Android.Text.Style;
 using Android.Views.Animations;
 using Android.Animation;
+using CinemaApp.Resources.views;
 
 namespace CinemaApp.Activities
 {
@@ -31,7 +32,7 @@ namespace CinemaApp.Activities
         private ImageView _trailerButton;
         private TextView _textViewTitle;
         private TextView _textViewDetails;
-        private TextView _description;
+        private ExpandableTextView _description;
         private Button _buttonBookTicket;
 
         private Bitmap _overlay;
@@ -65,7 +66,7 @@ namespace CinemaApp.Activities
             _textViewDetails.Text = $"Страна: {_movie.Country}\nРежиссер: {_movie.Director}\nВремя: {_movie.Length} мин.\nЖанр: {_movie.Genres}\nРейтинг IMDb: {_movie.IMDbRating}";
             SpannableString ss = new SpannableString($"Описание:\n{_movie.Description}");
             ss.SetSpan(new DescriptionLeadingMarginSpan2(8, 350), 0, ss.Length(), 0);
-            _description.TextFormatted = ss;
+            _description.PutText(ss);
 
             _poster = BitmapFactory.DecodeByteArray(_movie.Poster, 0, _movie.Poster.Length);
             _background.SetImageBitmap(_poster);
@@ -85,7 +86,7 @@ namespace CinemaApp.Activities
             _trailerButton = FindViewById<ImageView>(Resource.Id.trailerButton);
             _textViewTitle = FindViewById<TextView>(Resource.Id.textViewTitle);
             _textViewDetails = FindViewById<TextView>(Resource.Id.textViewDetails);
-            _description = FindViewById<TextView>(Resource.Id.description);
+            _description = FindViewById<ExpandableTextView>(Resource.Id.description);
             _buttonBookTicket = FindViewById<Button>(Resource.Id.buttonBookTicket);
 
             _bookingPage = FindViewById<LinearLayout>(Resource.Id.bookingPage);

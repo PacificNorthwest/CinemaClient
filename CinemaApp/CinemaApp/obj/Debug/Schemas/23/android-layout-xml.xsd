@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>24.05.2017 17:42:15</xs:documentation>
+    <xs:documentation>28.05.2017 1:44:50</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -80,6 +80,8 @@
       <xs:element ref="HorizontalScrollView" />
       <xs:element ref="SearchView" />
       <xs:element ref="fragment" />
+      <xs:element ref="CinemaApp.Resources.views.SeatButton" />
+      <xs:element ref="CinemaApp.Resources.views.ExpandableTextView" />
     </xs:choice>
   </xs:group>
   <xs:element name="CheckBox" type="CheckBox">
@@ -303,10 +305,15 @@
     <xs:attribute ref="android:foregroundTint" />
     <xs:attribute ref="android:foregroundTintMode" />
     <xs:attribute ref="android:scrollIndicators" />
+    <xs:attribute ref="android:layout_row" />
+    <xs:attribute ref="android:layout_rowSpan" />
+    <xs:attribute ref="android:layout_rowWeight" />
+    <xs:attribute ref="android:layout_column" />
+    <xs:attribute ref="android:layout_columnSpan" />
+    <xs:attribute ref="android:layout_columnWeight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1360,10 +1367,15 @@
     <xs:attribute ref="android:fragmentReenterTransition" />
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
+    <xs:attribute ref="android:layout_row" />
+    <xs:attribute ref="android:layout_rowSpan" />
+    <xs:attribute ref="android:layout_rowWeight" />
+    <xs:attribute ref="android:layout_column" />
+    <xs:attribute ref="android:layout_columnSpan" />
+    <xs:attribute ref="android:layout_columnWeight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1372,5 +1384,25 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="CinemaApp.Resources.views.SeatButton" type="CinemaApp.Resources.views.SeatButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: CinemaApp.Resources.views.SeatButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="CinemaApp.Resources.views.SeatButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="Button" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CinemaApp.Resources.views.ExpandableTextView" type="CinemaApp.Resources.views.ExpandableTextView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: CinemaApp.Resources.views.ExpandableTextView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="CinemaApp.Resources.views.ExpandableTextView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
+    </xs:complexContent>
   </xs:complexType>
 </xs:schema>
