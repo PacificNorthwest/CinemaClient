@@ -1,3 +1,4 @@
+using Android.Graphics;
 using System;
 using System.Collections.Generic;
 
@@ -17,5 +18,9 @@ namespace CinemaApp.Model
         public string IMDbRating { get; set; }
         public List<Day> ShowDays { get; set; } = new List<Day>();
         public byte[] Poster { get; set; }
+
+        public Bitmap BitmapPoster { get; set; }
+        public Bitmap TrailerThumbnail { get; set; }
+        public Bitmap GradientMask { get; set; }
     }
 }

@@ -36,10 +36,7 @@ namespace CinemaApp.Activities
         private TextView _totalPrice;
         private ExpandableTextView _description;
         private Button _buttonBookTicket;
-
-        private Bitmap _overlay;
-        private Bitmap _poster;
-        private Bitmap _thumbnail;
+        private Button _buttonConfirmBooking;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -52,32 +49,28 @@ namespace CinemaApp.Activities
             Animate();
         }
 
-        protected override void OnDestroy()
-        {
-            _overlay.Recycle();
-            _poster.Recycle();
-            _thumbnail.Recycle();
-            _overlay = _poster = _thumbnail = null;
-            base.OnDestroy();
-        }
-
         private void Initialize()
         {
             _textViewTitle.PaintFlags = _textViewTitle.PaintFlags | PaintFlags.UnderlineText;
             _textViewTitle.Text = _movie.Title;
-            _textViewDetails.Text = $"Страна: {_movie.Country}\nРежиссер: {_movie.Director}\nВремя: {_movie.Length} мин.\nЖанр: {_movie.Genres}\nРейтинг IMDb: {_movie.IMDbRating}";
-            SpannableString ss = new SpannableString($"Описание:\n{_movie.Description}");
+            _textViewDetails.Text = $"Country: {_movie.Country}\nDirector: {_movie.Director}\nDuration: {_movie.Length} мин.\nGenres: {_movie.Genres}\nIMDB rating: {_movie.IMDbRating}";
+            SpannableString ss = new SpannableString($"Description:\n{_movie.Description}");
             ss.SetSpan(new DescriptionLeadingMarginSpan2(8, 350), 0, ss.Length(), 0);
             _description.PutText(ss);
 
-            _poster = BitmapFactory.DecodeByteArray(_movie.Poster, 0, _movie.Poster.Length);
-            _background.SetImageBitmap(_poster);
-            _mask.SetImageBitmap(CreateGradientMask(_poster.Height, _poster.Width));
-            _trailerButton.SetImageBitmap(CreateTrailerThumbnail(_poster));
+            _background.SetImageBitmap(_movie.BitmapPoster);
+            _mask.SetImageBitmap(_movie.GradientMask);
+            _trailerButton.SetImageBitmap(_movie.TrailerThumbnail);
 
             _trailerButton.Click += (object sender, EventArgs e) => 
-                { StartActivity(new Intent(Intent.ActionView, Android.Net.Uri.Parse(_movie.Trailer))); };
-            _buttonBookTicket.Click += (object sender, EventArgs e) => { RevealBookingPage(); };
+                 StartActivity(new Intent(Intent.ActionView, Android.Net.Uri.Parse(_movie.Trailer)));
+            _buttonBookTicket.Click += (object sender, EventArgs e) => RevealBookingPage();
+            
+            try
+            {
+                InitializeBookingPage();
+            }
+            catch { }
         }
 
         private void FindViews()
@@ -98,35 +91,7 @@ namespace CinemaApp.Activities
             _seatsScheme = FindViewById<GridLayout>(Resource.Id.seats);
             _seatsList = FindViewById<TextView>(Resource.Id.seatslist);
             _totalPrice = FindViewById<TextView>(Resource.Id.totalPrice);
-        }
-
-        private Bitmap CreateGradientMask(int height, int width)
-        {
-            _overlay = Bitmap.CreateBitmap(width, height, Bitmap.Config.Argb8888);
-            Canvas canvas = new Canvas(_overlay);
-            Paint paint = new Paint();
-            LinearGradient shader = new LinearGradient(0, 0, 0, height, 
-                                                       new int[] { Color.Transparent, Color.Transparent, Color.ParseColor("#80000000"), Color.Black },
-                                                       new float[] { 0, .2f, .40f, 1},
-                                                       Shader.TileMode.Clamp);
-            paint.SetShader(shader);
-            canvas.DrawRect(0, 0, width, height, paint);
-            return _overlay;
-        }
-
-        private Bitmap CreateTrailerThumbnail(Bitmap poster)
-        {
-            _thumbnail = Bitmap.CreateBitmap(poster.Width, poster.Height, Bitmap.Config.Argb8888);
-            Canvas canvas = new Canvas(_thumbnail);
-            canvas.DrawBitmap(poster, 0, 0, null);
-            Paint paint = new Paint();
-            paint.Color = Color.ParseColor("#4D000000");
-            canvas.DrawRect(new Rect(0, 0, poster.Width, poster.Height), paint);
-            canvas.DrawBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.videoIcon),
-                              null,
-                              new Rect(poster.Width/13, poster.Height/5, (poster.Width - poster.Width/13), (poster.Height - poster.Height/5)),
-                              null);
-            return _thumbnail;
+            _buttonConfirmBooking = FindViewById<Button>(Resource.Id.buttonConfirmBooking);
         }
 
         private void Animate()
@@ -139,11 +104,6 @@ namespace CinemaApp.Activities
         {
             if (_bookingPage.Visibility == ViewStates.Invisible)
             {
-                try
-                {
-                    InitializeBookingPage();
-                }
-                catch { }
                 int centerX = (_buttonBookTicket.Left + _buttonBookTicket.Right) / 2;
                 int centerY = (_buttonBookTicket.Top + _buttonBookTicket.Bottom) / 2;
                 float radius = Math.Max(_mainContainer.Width, _mainContainer.Height);

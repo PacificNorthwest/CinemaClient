@@ -17,7 +17,7 @@ namespace CinemaApp.Resources.views
 {
     public class ExpandableTextView : TextView
     {
-        private readonly int TRIM_LENGTH = 165;
+        private readonly int TRIM_LENGTH = 175;
 
         private ICharSequence _trimmedText;
         private ICharSequence _originalText;

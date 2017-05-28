@@ -10,6 +10,14 @@ CinemaApp.Resources.views.SeatButton, CinemaApp;md52b1c380880b4fc70b07b49d54d48f
 CinemaApp.Resources.views.SeatButton, CinemaApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md52b1c380880b4fc70b07b49d54d48fdb0.SeatButton
 CinemaApp.Resources.views.SeatButton;md52b1c380880b4fc70b07b49d54d48fdb0.SeatButton
 cinemaapp.resources.views.SeatButton;md52b1c380880b4fc70b07b49d54d48fdb0.SeatButton
+CinemaApp.Security.AuthCallback, CinemaApp;md5275d53c3e4b5e46977a1c2c9323df9e7.AuthCallback
+CinemaApp.Security.AuthCallback, CinemaApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5275d53c3e4b5e46977a1c2c9323df9e7.AuthCallback
+CinemaApp.Security.AuthCallback;md5275d53c3e4b5e46977a1c2c9323df9e7.AuthCallback
+cinemaapp.security.AuthCallback;md5275d53c3e4b5e46977a1c2c9323df9e7.AuthCallback
+CinemaApp.Activities.ConfirmBookingActivity, CinemaApp;md5508d47e4c93802eb0beedcd6d9d738d1.ConfirmBookingActivity
+CinemaApp.Activities.ConfirmBookingActivity, CinemaApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5508d47e4c93802eb0beedcd6d9d738d1.ConfirmBookingActivity
+CinemaApp.Activities.ConfirmBookingActivity;md5508d47e4c93802eb0beedcd6d9d738d1.ConfirmBookingActivity
+cinemaapp.activities.ConfirmBookingActivity;md5508d47e4c93802eb0beedcd6d9d738d1.ConfirmBookingActivity
 CinemaApp.Activities.MoviePageActivity, CinemaApp;md5508d47e4c93802eb0beedcd6d9d738d1.MoviePageActivity
 CinemaApp.Activities.MoviePageActivity, CinemaApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5508d47e4c93802eb0beedcd6d9d738d1.MoviePageActivity
 CinemaApp.Activities.MoviePageActivity;md5508d47e4c93802eb0beedcd6d9d738d1.MoviePageActivity

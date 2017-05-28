@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Animation;
 using CinemaApp.Model;
 using CinemaApp.Resources.views;
+using Newtonsoft.Json;
 
 namespace CinemaApp.Activities
 {
@@ -32,26 +33,32 @@ namespace CinemaApp.Activities
             _dateSpinner.ItemSelected += (object sender, AdapterView.ItemSelectedEventArgs e) =>
                                          { PopulateSessionsGrid(_movie.ShowDays.Find(day => day.Date.DayOfYear ==
                                                                 Convert.ToDateTime((e.View as TextView).Text).DayOfYear)); };
+            _buttonConfirmBooking.Click += (object sender, EventArgs e) =>
+                                                {
+                                                    Intent intent = new Intent(this, typeof(ConfirmBookingActivity));
+                                                    intent.PutExtra("MovieID", _movie.ID);
+                                                    intent.PutExtra("SessionID", _selectedSession.ID);
+                                                    intent.PutExtra("SelectedSeats", JsonConvert.SerializeObject(_checkedSeats.Select(s =>
+                                                                                                                 _seatsScheme.IndexOfChild(s))));
+                                                    StartActivity(intent);
+                                                };
             //Добавить потом, когда нормально запилю сеансы в бд
             //PopulateSessionsGrid(_movie.ShowDays.Find(day => day.Date.DayOfYear == DateTime.Now.DayOfYear));
             if (_movie.ShowDays.Count > 0)
                 PopulateSessionsGrid(_movie.ShowDays[0]);
-            InitializeSeats();
+
+
+            for (int i = 0; i < _seatsScheme.ChildCount; i++)
+                (_seatsScheme.GetChildAt(i) as SeatButton).Click += SeatButton_Click;
         }
 
-        private void InitializeSeats()
+        private void SeatButton_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < _seatsScheme.ChildCount; i++)
-            {
-                (_seatsScheme.GetChildAt(i) as SeatButton).Click += (object sender, EventArgs e) => 
-                                                                                    {
-                                                                                        if ((sender as SeatButton).Checked)
-                                                                                            _checkedSeats.Add(sender as SeatButton);
-                                                                                        else
-                                                                                            _checkedSeats.Remove(sender as SeatButton);
-                                                                                        UpdateBookingInfo();
-                                                                                    };                 
-            }
+            if ((sender as SeatButton).Checked)
+                _checkedSeats.Add(sender as SeatButton);
+            else
+                _checkedSeats.Remove(sender as SeatButton);
+            UpdateBookingInfo();
         }
 
         private void ClearSeats()
@@ -127,10 +134,10 @@ namespace CinemaApp.Activities
         private void UpdateBookingInfo()
         {
             StringBuilder seatsList = new StringBuilder("Seats:\n");
-            foreach (SeatButton seat in _checkedSeats)
+            foreach (SeatButton seat in _checkedSeats.OrderBy(s => _seatsScheme.IndexOfChild(s)))
                 seatsList.AppendLine($"Row {_seatsScheme.IndexOfChild(seat)/10 + 1}, Seat {_seatsScheme.IndexOfChild(seat) % 10 + 1}");
             _seatsList.Text = seatsList.ToString();
-            _totalPrice.Text = $"{_checkedSeats.Count * 70} грн.";
+            _totalPrice.Text = $"{_checkedSeats.Count * 70} UAH";
         }
 
         public override void OnBackPressed()

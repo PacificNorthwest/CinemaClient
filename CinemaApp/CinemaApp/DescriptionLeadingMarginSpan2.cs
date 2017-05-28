@@ -35,12 +35,6 @@ namespace CinemaApp
                                       int start, int end, bool first,
                                       Layout layout) { }
 
-        public int GetLeadingMargin(bool first)
-        {
-            if (first)
-                return _margin;
-            else
-                return 30;
-        }
+        public int GetLeadingMargin(bool first) => (first) ? _margin : 30;
     }
 }

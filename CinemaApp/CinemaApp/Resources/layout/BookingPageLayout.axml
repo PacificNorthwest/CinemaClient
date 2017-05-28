@@ -25,7 +25,7 @@
             android:gravity="left"
             android:layout_marginTop="20dp">
             <TextView
-                android:text="Выберите дату: "
+                android:text="Pick date: "
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
                 android:layout_gravity="center" />
         </LinearLayout>
         <TextView
-            android:text="Выберите время: "
+            android:text="Pick time: "
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:orientation="horizontal"
             android:columnCount="3" />
         <TextView
-            android:text="Выберите место: "
+            android:text="Pick seats: "
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp" />
         <TextView
-            android:text="Экран"
+            android:text="Screen"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -104,7 +104,16 @@
                 android:layout_marginLeft="25dp"
                 android:textColor="@android:color/holo_green_light"
                 android:textSize="25sp"
-                android:text="0 грн" />
+                android:text="0 UAH" />
         </LinearLayout>
+<Button
+  android:id="@+id/buttonConfirmBooking"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_margin="10dp"
+  android:textSize="33sp"
+  android:background="#80000000"
+  android:textColor="@android:color/white"
+  android:text="Pay"/>
     </LinearLayout>
 </ScrollView>
