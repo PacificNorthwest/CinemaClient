@@ -25,13 +25,15 @@ namespace CinemaApp.Activities
     public partial class MoviePageActivity : Activity
     {
         private Model.Movie _movie;
-        private LinearLayout _bookingPage;
+        private ScrollView _bookingPage;
         private LinearLayout _mainContainer;
         private ImageView _background;
         private ImageView _mask;
         private ImageView _trailerButton;
         private TextView _textViewTitle;
         private TextView _textViewDetails;
+        private TextView _seatsList;
+        private TextView _totalPrice;
         private ExpandableTextView _description;
         private Button _buttonBookTicket;
 
@@ -89,11 +91,13 @@ namespace CinemaApp.Activities
             _description = FindViewById<ExpandableTextView>(Resource.Id.description);
             _buttonBookTicket = FindViewById<Button>(Resource.Id.buttonBookTicket);
 
-            _bookingPage = FindViewById<LinearLayout>(Resource.Id.bookingPage);
+            _bookingPage = FindViewById<ScrollView>(Resource.Id.bookingPage);
             _bookingPageMovieTitle = FindViewById<TextView>(Resource.Id.bookingPageMovieTitle);
             _dateSpinner = FindViewById<Spinner>(Resource.Id.dateSpinner);
             _sessionsGrid = FindViewById<GridLayout>(Resource.Id.sessionsGrid);
             _seatsScheme = FindViewById<GridLayout>(Resource.Id.seats);
+            _seatsList = FindViewById<TextView>(Resource.Id.seatslist);
+            _totalPrice = FindViewById<TextView>(Resource.Id.totalPrice);
         }
 
         private Bitmap CreateGradientMask(int height, int width)

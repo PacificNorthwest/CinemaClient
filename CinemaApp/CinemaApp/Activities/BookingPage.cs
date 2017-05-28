@@ -11,11 +11,14 @@ using Android.Views;
 using Android.Widget;
 using Android.Animation;
 using CinemaApp.Model;
+using CinemaApp.Resources.views;
 
 namespace CinemaApp.Activities
 {
     public partial class MoviePageActivity : Activity
     {
+        private List<SeatButton> _checkedSeats = new List<SeatButton>();
+
         private TextView _bookingPageMovieTitle;
         private Spinner _dateSpinner;
         private GridLayout _sessionsGrid;
@@ -40,6 +43,21 @@ namespace CinemaApp.Activities
         {
             for (int i = 0; i < _seatsScheme.ChildCount; i++)
             {
+                (_seatsScheme.GetChildAt(i) as SeatButton).Click += (object sender, EventArgs e) => 
+                                                                                    {
+                                                                                        if ((sender as SeatButton).Checked)
+                                                                                            _checkedSeats.Add(sender as SeatButton);
+                                                                                        else
+                                                                                            _checkedSeats.Remove(sender as SeatButton);
+                                                                                        UpdateBookingInfo();
+                                                                                    };                 
+            }
+        }
+
+        private void ClearSeats()
+        {
+            for (int i = 0; i < _seatsScheme.ChildCount; i++)
+            {
                 _seatsScheme.GetChildAt(i).Enabled = true;
                 (_seatsScheme.GetChildAt(i) as Resources.views.SeatButton).Checked = false;
 
@@ -47,7 +65,7 @@ namespace CinemaApp.Activities
                 {
                     _seatsScheme.GetChildAt(i).Enabled = false;
                     _seatsScheme.GetChildAt(i).SetBackgroundColor(Android.Graphics.Color.DarkGray);
-                }                    
+                }
             }
         }
 
@@ -101,7 +119,18 @@ namespace CinemaApp.Activities
                 
             tile.SetBackgroundColor(Android.Graphics.Color.LightGreen);
             _selectedSession = session;
-            InitializeSeats();
+            ClearSeats();
+            _checkedSeats.Clear();
+            UpdateBookingInfo();
+        }
+
+        private void UpdateBookingInfo()
+        {
+            StringBuilder seatsList = new StringBuilder("Seats:\n");
+            foreach (SeatButton seat in _checkedSeats)
+                seatsList.AppendLine($"Row {_seatsScheme.IndexOfChild(seat)/10 + 1}, Seat {_seatsScheme.IndexOfChild(seat) % 10 + 1}");
+            _seatsList.Text = seatsList.ToString();
+            _totalPrice.Text = $"{_checkedSeats.Count * 70} грн.";
         }
 
         public override void OnBackPressed()

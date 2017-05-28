@@ -3,7 +3,7 @@
   <xs:import schemaLocation="schemas.android.com.apk.res.android.xsd" namespace="http://schemas.android.com/apk/res/android" />
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>28.05.2017 1:44:50</xs:documentation>
+    <xs:documentation>28.05.2017 15:25:02</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -305,22 +305,8 @@
     <xs:attribute ref="android:foregroundTint" />
     <xs:attribute ref="android:foregroundTintMode" />
     <xs:attribute ref="android:scrollIndicators" />
-    <xs:attribute ref="android:layout_row" />
-    <xs:attribute ref="android:layout_rowSpan" />
-    <xs:attribute ref="android:layout_rowWeight" />
-    <xs:attribute ref="android:layout_column" />
-    <xs:attribute ref="android:layout_columnSpan" />
-    <xs:attribute ref="android:layout_columnWeight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_margin" />
-    <xs:attribute ref="android:layout_marginLeft" />
-    <xs:attribute ref="android:layout_marginTop" />
-    <xs:attribute ref="android:layout_marginRight" />
-    <xs:attribute ref="android:layout_marginBottom" />
-    <xs:attribute ref="android:layout_marginStart" />
-    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="SurfaceView" type="SurfaceView">
@@ -1367,22 +1353,8 @@
     <xs:attribute ref="android:fragmentReenterTransition" />
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
-    <xs:attribute ref="android:layout_row" />
-    <xs:attribute ref="android:layout_rowSpan" />
-    <xs:attribute ref="android:layout_rowWeight" />
-    <xs:attribute ref="android:layout_column" />
-    <xs:attribute ref="android:layout_columnSpan" />
-    <xs:attribute ref="android:layout_columnWeight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_margin" />
-    <xs:attribute ref="android:layout_marginLeft" />
-    <xs:attribute ref="android:layout_marginTop" />
-    <xs:attribute ref="android:layout_marginRight" />
-    <xs:attribute ref="android:layout_marginBottom" />
-    <xs:attribute ref="android:layout_marginStart" />
-    <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
   </xs:complexType>
   <xs:element name="CinemaApp.Resources.views.SeatButton" type="CinemaApp.Resources.views.SeatButton">

@@ -15,7 +15,6 @@ using CinemaApp.Model;
 using System.IO;
 using CinemaApp;
 using Android;
-using System.IO;
 
 namespace CinemaApp.Activities
 {
