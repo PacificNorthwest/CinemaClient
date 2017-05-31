@@ -14,6 +14,7 @@ using Newtonsoft.Json;
 using CinemaApp.Resources.views;
 using Android.Hardware.Fingerprints;
 using CinemaApp.Security;
+using System.Threading;
 
 namespace CinemaApp.Activities
 {
@@ -24,6 +25,7 @@ namespace CinemaApp.Activities
         private GridLayout _seatsScheme;
         private EditText _password;
         private Button _buttonSubmit;
+        private RelativeLayout _bookingProcessIndicator;
 
         private Movie _movie;
         private Day _showDay;
@@ -44,10 +46,19 @@ namespace CinemaApp.Activities
             _seatsScheme = FindViewById<GridLayout>(Resource.Id.seats);
             _password = FindViewById<EditText>(Resource.Id.confirmBooking_password);
             _buttonSubmit = FindViewById<Button>(Resource.Id.confirmBooking_buttonSubmit);
+            _bookingProcessIndicator = FindViewById<RelativeLayout>(Resource.Id.bookingProcessIndicator);
         }
 
         private void Initialize()
         {
+            _buttonSubmit.Click += (object sender, EventArgs e) =>
+                                    {
+                                        if (_password.Text != string.Empty &&
+                                            SecurityProvider.VerifyUser(_password.Text))
+                                            OnAuthenticationSucceeded();
+                                        else OnAuthenticationFailed();
+                                    };
+
             _movie = Schedule.Movies.Find(m => m.ID == Intent.GetIntExtra("MovieID", 0));
             _showDay = _movie.ShowDays.Find(d => d.Sessions.Exists( s => s.ID == Intent.GetIntExtra("SessionID", 0)));
             _session = _showDay.Sessions.Find(s => s.ID == Intent.GetIntExtra("SessionID", 0));
@@ -65,22 +76,41 @@ namespace CinemaApp.Activities
                 && permission == Android.Content.PM.Permission.Granted)
             {
                 const int flags = 0;
-                CryptoObjectFactory cryptoHelper = new CryptoObjectFactory();
+                CryptoObjectFactory cryptoObject = new CryptoObjectFactory();
                 CancellationSignal cancellationSignal = new CancellationSignal();
                 FingerprintManager.AuthenticationCallback authCallback = new AuthCallback(this);
-                fingerprint.Authenticate(cryptoHelper.BuildCryptoObject(), cancellationSignal, flags, authCallback, null);
+                fingerprint.Authenticate(cryptoObject.BuildCryptoObject(), cancellationSignal, flags, authCallback, null);
             }
         }
 
         public void OnAuthenticationSucceeded()
         {
-            Toast.MakeText(this, "Fingerprint scan succeeded", ToastLength.Long).Show();
-            //some action here
+            _bookingProcessIndicator.Visibility = ViewStates.Visible;
+            new Thread(() =>
+            {
+                try
+                {
+                    SecurityProvider.BookSeats(_session, _seats);
+                    RunOnUiThread(() => Toast.MakeText(this, "Booking successful!", ToastLength.Long).Show());
+                }
+                catch (Exception ex)
+                {
+                    RunOnUiThread(() => Toast.MakeText(this, ex.Message, ToastLength.Long).Show());
+                }
+                finally
+                {
+                    RunOnUiThread(() =>
+                    {
+                        _bookingProcessIndicator.Visibility = ViewStates.Invisible;
+                        StartActivity(new Intent(this, typeof(MainActivity)));
+                    });
+                }
+            }).Start();
         }
 
         public void OnAuthenticationFailed()
         {
-            Toast.MakeText(this, "Fingerprint scan failed", ToastLength.Long).Show();
+            Toast.MakeText(this, "Authentication failed", ToastLength.Long).Show();
             Authenticate();
         }
     }

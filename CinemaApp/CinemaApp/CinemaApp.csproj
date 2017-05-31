@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Activities\ConfirmBookingActivity.cs" />
     <Compile Include="Activities\BookingPage.cs" />
+    <Compile Include="Exceptions\BookingFailedException.cs" />
     <Compile Include="Security\AuthCallback.cs" />
     <Compile Include="Security\CryptoObjectFactory.cs" />
     <Compile Include="Activities\MainActivity.cs" />

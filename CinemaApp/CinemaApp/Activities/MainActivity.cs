@@ -38,12 +38,15 @@ namespace CinemaApp.Activities
         private void Initialize()
         {
             _root = FindViewById<GridLayout>(Resource.Id.root);
-            ServerRequest.LoadMovieList();
-            foreach (Model.Movie movie in Schedule.Movies)
+            if (Schedule.Movies == null)
             {
-                movie.BitmapPoster = BitmapFactory.DecodeByteArray(movie.Poster, 0, movie.Poster.Length);
-                movie.TrailerThumbnail = CreateTrailerThumbnail(movie.BitmapPoster);
-                movie.GradientMask = CreateGradientMask(movie.BitmapPoster.Height, movie.BitmapPoster.Width);
+                ServerRequest.LoadMovieList();
+                foreach (Model.Movie movie in Schedule.Movies)
+                {
+                    movie.BitmapPoster = BitmapFactory.DecodeByteArray(movie.Poster, 0, movie.Poster.Length);
+                    movie.TrailerThumbnail = CreateTrailerThumbnail(movie.BitmapPoster);
+                    movie.GradientMask = CreateGradientMask(movie.BitmapPoster.Height, movie.BitmapPoster.Width);
+                }
             }
             RunOnUiThread(Populate);
         }

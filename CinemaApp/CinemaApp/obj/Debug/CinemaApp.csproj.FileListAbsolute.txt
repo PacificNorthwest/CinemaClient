@@ -18,12 +18,11 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\s
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\R.cs.flag
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\uploadflags.txt
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\registrationpage.xml
-E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\CinemaApp.csprojResolveAssemblyReference.cache
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.dll
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.xml
-E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\confirmbookingpagelayout.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\drawable\fingerprint.png
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\Java.Interop.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\Microsoft.CSharp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\Mono.Android.dll.mdb

@@ -96,12 +96,60 @@ namespace CinemaApp.Security
             using (StreamWriter writer = new StreamWriter(stream))
                 writer.WriteLine($"{login}:{BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(baseHash)).Replace("-", string.Empty)}");
         }
+
+        public static bool VerifyUser(string pass)
+        {
+            string[] buffer;
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.Open, FileAccess.Read))
+            using (StreamReader reader = new StreamReader(stream))
+                buffer = reader.ReadLine().Split(':');
+            if (buffer[1] == BitConverter.ToString(
+                                new MD5CryptoServiceProvider()
+                                .ComputeHash(new MD5CryptoServiceProvider()
+                                .ComputeHash(Encoding.UTF8.GetBytes(string.Concat(buffer[0], pass))))).Replace("-", string.Empty))
+                return true;
+            else return false;
+
+        }
+        public static bool BookSeats(Session session, IEnumerable<int> seatIdOnScheme)
+        {
+            byte[] keyBuffer;
+            string token;
+
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "key.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.Open, FileAccess.Read))
+            {
+                keyBuffer = new byte[stream.Length];
+                stream.Read(keyBuffer, 0, keyBuffer.Length);
+            }
+
+            dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.Open, FileAccess.Read))
+            using (StreamReader reader = new StreamReader(stream))
+                token = reader.ReadLine().Split(':')[1];
+
+            string appKey = BitConverter.ToString(keyBuffer).Replace("-", string.Empty);
+
+            bool result = Server.ServerRequest.BookSeats(token, appKey, session.ID.ToString(), session.Hall, seatIdOnScheme);
+            if (result)
+            {
+                foreach (int seatId in seatIdOnScheme)
+                    session.BookedSeats.Add(new Seat() { ID = ((session.Hall - 1) * 80) + seatId,
+                                                         Hall = session.Hall,
+                                                         Row = seatId / 10 + 1,
+                                                         Number = seatId % 10 + 1
+                                                       });
+                return true;
+            }
+            else throw new BookingFailedException();
+        }
         #endregion
 
         public static byte[] StringToByteArray(string hex) =>
-                   Enumerable.Range(0, hex.Length)
-                             .Where(x => x % 2 == 0)
-                             .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
-                             .ToArray();
+            Enumerable.Range(0, hex.Length)
+                      .Where(x => x % 2 == 0)
+                      .Select(x => Convert.ToByte(hex.Substring(x, 2), 16))
+                      .ToArray();
     }
 }
