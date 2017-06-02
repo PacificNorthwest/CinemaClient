@@ -19,7 +19,7 @@ using CinemaApp.Security;
 
 namespace CinemaApp.Activities
 {
-    [Activity(Label = "CinemaApp", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "RegistrationActivity")]
     public class RegistrationActivity : Activity
     {
         private EditText _login;
@@ -33,13 +33,8 @@ namespace CinemaApp.Activities
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            if (File.Exists(Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat")))
-                LoadMainActivity();
-            else
-            {
-                SetContentView(Resource.Layout.RegistrationPage);
-                InitializeViews();
-            }
+            SetContentView(Resource.Layout.RegistrationPage);
+            InitializeViews();
         }
 
         private void InitializeViews()
@@ -69,7 +64,7 @@ namespace CinemaApp.Activities
                                                      _cardNumber.Text,
                                                      _expDate.Text,
                                                      _cvv.Text);
-                    LoadMainActivity();
+                    StartActivity(new Intent(this, typeof(MoviesLoadingPageActivity)));
                 }
                 catch (Exception ex)
                 {
@@ -78,11 +73,6 @@ namespace CinemaApp.Activities
             }
             else
                 Toast.MakeText(this, "Not matching passwords!", ToastLength.Short).Show();
-        }
-
-        private void LoadMainActivity()
-        {
-            StartActivity(new Intent(this, typeof(MainActivity)));
         }
     }
 }

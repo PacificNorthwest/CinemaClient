@@ -38,7 +38,7 @@ namespace CinemaApp.Security
 
             EncryptLocalKey(localKey, serverKey);        
             var result = Server.ServerRequest.SignUpNewUser(login, BitConverter.ToString(serverKey).Replace("-", string.Empty), card);
-            if (result) CreateUserToken(login, serverKey);
+            if (result) CreateUserTokenFile(login, new MD5CryptoServiceProvider().ComputeHash(serverKey));
             else throw new RegistrationFailedException();
         }
 
@@ -89,12 +89,12 @@ namespace CinemaApp.Security
             }
         }
 
-        private static void CreateUserToken(string login, byte[] baseHash)
+        private static void CreateUserTokenFile(string login, byte[] keyHash)
         {
             var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
             using (FileStream stream = new FileStream(dir, FileMode.Create, FileAccess.Write))
             using (StreamWriter writer = new StreamWriter(stream))
-                writer.WriteLine($"{login}:{BitConverter.ToString(new MD5CryptoServiceProvider().ComputeHash(baseHash)).Replace("-", string.Empty)}");
+                writer.WriteLine($"{login}:{BitConverter.ToString(keyHash).Replace("-", string.Empty)}");
         }
 
         public static bool VerifyUser(string pass)
@@ -143,6 +143,15 @@ namespace CinemaApp.Security
                 return true;
             }
             else throw new BookingFailedException();
+        }
+
+        public static bool ProcessLogin(string email, string password)
+        {
+            byte[] userToken = new MD5CryptoServiceProvider().ComputeHash(
+                               new MD5CryptoServiceProvider().ComputeHash(Encoding.UTF8.GetBytes(string.Concat(email, password))));
+            var result = Server.ServerRequest.LogIn(email, BitConverter.ToString(userToken));
+            if (result) CreateUserTokenFile(email, userToken);
+            return result;
         }
         #endregion
 

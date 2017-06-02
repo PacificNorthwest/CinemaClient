@@ -63,6 +63,8 @@
   <ItemGroup>
     <Compile Include="Activities\ConfirmBookingActivity.cs" />
     <Compile Include="Activities\BookingPage.cs" />
+    <Compile Include="Activities\LoginActivity.cs" />
+    <Compile Include="Activities\MoviesLoadingPageActivity.cs" />
     <Compile Include="Exceptions\BookingFailedException.cs" />
     <Compile Include="Security\AuthCallback.cs" />
     <Compile Include="Security\CryptoObjectFactory.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Server\ServerRequest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -102,6 +105,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ConfirmBookingPageLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MoviesLoadingPageActivity.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\LoginPageLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

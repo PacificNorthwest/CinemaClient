@@ -56,6 +56,22 @@ namespace CinemaApp.Server
             return result;          
         }
 
+        public static bool LogIn(string email, string userToken)
+        {
+            var client = new RestClient(@"https://cinemaserver.azurewebsites.net");
+            var request = new RestRequest("api/accounts", Method.GET);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(JsonConvert.SerializeObject(new
+            {
+                Email = email,
+                UserToken = userToken
+            }));
+
+            IRestResponse response = client.Execute(request);
+            var result = bool.Parse(JsonConvert.DeserializeObject<string>(response.Content));
+            return result;
+        }
+
         public static bool BookSeats(string userToken, string appKey, string sessionId, int hall, IEnumerable<int> seats)
         {
             var client = new RestClient(@"https://cinemaserver.azurewebsites.net");

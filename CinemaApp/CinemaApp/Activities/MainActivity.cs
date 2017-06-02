@@ -26,29 +26,19 @@ namespace CinemaApp.Activities
             Window.RequestFeature(WindowFeatures.ContentTransitions);
             base.OnCreate(bundle);
             SetContentView (Resource.Layout.Main);
-            new Thread(Initialize).Start();
             Animate();
+            Initialize();
         }
 
         private void Animate()
         {
-           //Window.ExitTransition = new Fade();
+           Window.EnterTransition = new Explode();
         }
 
         private void Initialize()
         {
             _root = FindViewById<GridLayout>(Resource.Id.root);
-            if (Schedule.Movies == null)
-            {
-                ServerRequest.LoadMovieList();
-                foreach (Model.Movie movie in Schedule.Movies)
-                {
-                    movie.BitmapPoster = BitmapFactory.DecodeByteArray(movie.Poster, 0, movie.Poster.Length);
-                    movie.TrailerThumbnail = CreateTrailerThumbnail(movie.BitmapPoster);
-                    movie.GradientMask = CreateGradientMask(movie.BitmapPoster.Height, movie.BitmapPoster.Width);
-                }
-            }
-            RunOnUiThread(Populate);
+            Populate();
         }
 
         private void Populate()
@@ -61,9 +51,9 @@ namespace CinemaApp.Activities
                 container.AddView(poster);
                 container.AddView(title);
                 container.Click += Movie_Click;
+                Window.EnterTransition.AddTarget(container);
                 _root.AddView(container);
             }
-            FindViewById<RelativeLayout>(Resource.Id.loadingPanel).Visibility = ViewStates.Gone;
         }
 
         private void Movie_Click(object sender, EventArgs e)
@@ -115,34 +105,7 @@ namespace CinemaApp.Activities
             return titleField;
         }
 
-        private Bitmap CreateGradientMask(int height, int width)
-        {
-            Bitmap overlay = Bitmap.CreateBitmap(width, height, Bitmap.Config.Argb8888);
-            Canvas canvas = new Canvas(overlay);
-            Paint paint = new Paint();
-            LinearGradient shader = new LinearGradient(0, 0, 0, height,
-                                                       new int[] { Color.Transparent, Color.Transparent, Color.ParseColor("#80000000"), Color.Black },
-                                                       new float[] { 0, .2f, .40f, 1 },
-                                                       Shader.TileMode.Clamp);
-            paint.SetShader(shader);
-            canvas.DrawRect(0, 0, width, height, paint);
-            return overlay;
-        }
-
-        private Bitmap CreateTrailerThumbnail(Bitmap poster)
-        {
-            Bitmap thumbnail = Bitmap.CreateBitmap(poster.Width, poster.Height, Bitmap.Config.Argb8888);
-            Canvas canvas = new Canvas(thumbnail);
-            canvas.DrawBitmap(poster, 0, 0, null);
-            Paint paint = new Paint();
-            paint.Color = Color.ParseColor("#4D000000");
-            canvas.DrawRect(new Rect(0, 0, poster.Width, poster.Height), paint);
-            canvas.DrawBitmap(BitmapFactory.DecodeResource(Resources, Resource.Drawable.videoIcon),
-                              null,
-                              new Rect(poster.Width / 13, poster.Height / 5, (poster.Width - poster.Width / 13), (poster.Height - poster.Height / 5)),
-                              null);
-            return thumbnail;
-        }
+        
     }
 }
 

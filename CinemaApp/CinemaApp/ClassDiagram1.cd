@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CinemaApp.Security.AuthCallback">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAgAAAAAAAAAAAAAAAAAAACgAAAAAAEAAA=</HashCode>
+      <FileName>Security\AuthCallback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaApp.Security.CryptoObjectFactory">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAJgAAABAAQQAAAQAABAAAAAAAAAACAA=</HashCode>
+      <FileName>Security\CryptoObjectFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaApp.Security.SecurityProvider">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAATAAAEAAAAAIAAABAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Security\SecurityProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaApp.Server.ServerRequest">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABABAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Server\ServerRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaApp.DescriptionLeadingMarginSpan2">
+    <Position X="0.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAgAAAAAAAAABAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DescriptionLeadingMarginSpan2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CinemaApp.Exceptions.BookingFailedException">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Exceptions\BookingFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CinemaApp.Exceptions.RegistrationFailedException">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Exceptions\RegistrationFailedException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

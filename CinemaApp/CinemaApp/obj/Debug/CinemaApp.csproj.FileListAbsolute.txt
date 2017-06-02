@@ -22,6 +22,8 @@ E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.dl
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\RestSharp.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\confirmbookingpagelayout.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\drawable\fingerprint.png
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\moviesloadingpageactivity.xml
+E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\obj\Debug\res\layout\loginpagelayout.xml
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\CinemaApp.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\Java.Interop.dll.mdb
 E:\Диплом\Ян\Git\CinemaClient\CinemaApp\CinemaApp\bin\Debug\Microsoft.CSharp.dll.mdb
