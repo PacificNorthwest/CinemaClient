@@ -14,7 +14,8 @@ namespace CinemaApp.Model
 {
     static class Schedule
     {
-        public static List<Movie> Movies { get; set; }
+        public static List<Movie> Movies { get; set; } = new List<Movie>();
+        public static List<int> BookedTickets { get; set; } = new List<int>();
         public static Movie GetMovieByTitle(string title) => Movies.Find(movie => movie.Title == title);
         public static Movie GetMovieByID(int id) => Movies.Find(movie => movie.ID == id);
     }

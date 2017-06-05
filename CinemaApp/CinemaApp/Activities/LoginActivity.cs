@@ -52,6 +52,7 @@ namespace CinemaApp.Activities
         {
             bool result = Security.SecurityProvider.ProcessLogin(_email.Text, _password.Text);
             if (result) StartActivity(new Intent(this, typeof(MoviesLoadingPageActivity)));
+            else Toast.MakeText(this, "Login failed!", ToastLength.Long).Show();
         }
     }
 }

@@ -28,7 +28,8 @@ namespace CinemaApp.Activities
 
         private void Load()
         {
-            ServerRequest.LoadMovieList();
+            var token = Security.SecurityProvider.GetUserToken();
+            ServerRequest.LoadInfo(token);
             foreach (Model.Movie movie in Schedule.Movies)
             {
                 movie.BitmapPoster = BitmapFactory.DecodeByteArray(movie.Poster, 0, movie.Poster.Length);

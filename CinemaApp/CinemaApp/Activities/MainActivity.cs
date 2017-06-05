@@ -13,6 +13,7 @@ using Android.Content;
 using CinemaApp.Model;
 using Java.IO;
 using Android.Transitions;
+using ZXing.QrCode;
 
 namespace CinemaApp.Activities
 {
@@ -38,6 +39,8 @@ namespace CinemaApp.Activities
         private void Initialize()
         {
             _root = FindViewById<GridLayout>(Resource.Id.root);
+            FindViewById<ImageButton>(Resource.Id.buttonMenu).Click += (object sender, EventArgs e) => 
+                                                 StartActivity(new Intent(this, typeof(UserTicketsPageActivity)));
             Populate();
         }
 

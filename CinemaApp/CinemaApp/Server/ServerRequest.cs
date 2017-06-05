@@ -20,24 +20,16 @@ namespace CinemaApp.Server
     class ServerRequest
     {
 
-        public static void LoadMovieList()
+        public static void LoadInfo(string token)
         {
-            var request = WebRequest.Create(@"http://cinemaserver.azurewebsites.net/api/movies");
-            request.ContentType = "application/json";
-            request.Method = "GET";
-            using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
-            {
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    using (StreamReader reader = new StreamReader(response.GetResponseStream()))
-                    {
-                        string buffer = reader.ReadToEnd();
-                        Schedule.Movies = JsonConvert.DeserializeObject<List<Movie>>(buffer);
-                    }
-                }
-                else
-                    throw new Exception($"Connection Failed. Reason: {response.StatusCode}");
-            }
+            var client = new RestClient(@"https://cinemaserver.azurewebsites.net");
+            var request = new RestRequest("api/movies", Method.GET);
+            request.AddQueryParameter("token", token);
+            IRestResponse response = client.Execute(request);
+            var result = JsonConvert.DeserializeAnonymousType(JsonConvert.DeserializeObject<string>(response.Content), 
+                                                              new { Movies = new List<Movie>(), Tickets = new List<int>() });
+            Schedule.Movies = result.Movies;
+            Schedule.BookedTickets = result.Tickets;
         }
 
         public static bool SignUpNewUser(string email, string serverKey, CardInfo card)
@@ -60,8 +52,7 @@ namespace CinemaApp.Server
         {
             var client = new RestClient(@"https://cinemaserver.azurewebsites.net");
             var request = new RestRequest("api/accounts", Method.GET);
-            request.RequestFormat = DataFormat.Json;
-            request.AddJsonBody(JsonConvert.SerializeObject(new
+            request.AddQueryParameter("value", JsonConvert.SerializeObject(new
             {
                 Email = email,
                 UserToken = userToken

@@ -49,8 +49,10 @@ namespace CinemaApp.Resources.views
         public void PutText(SpannableString originalText)
         {
             _originalText = originalText;
-            _trimmedText = TextUtils.ConcatFormatted(_originalText.SubSequenceFormatted(0, TRIM_LENGTH),
+            if (_originalText.Length() > TRIM_LENGTH)
+                _trimmedText = TextUtils.ConcatFormatted(_originalText.SubSequenceFormatted(0, TRIM_LENGTH),
                                                      new SpannableString("..."));
+            else _trimmedText = _originalText;
             this.TextFormatted = _trimmedText;
         }
     }

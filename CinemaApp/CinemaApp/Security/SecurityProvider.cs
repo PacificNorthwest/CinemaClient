@@ -145,6 +145,14 @@ namespace CinemaApp.Security
             else throw new BookingFailedException();
         }
 
+        public static string GetUserToken()
+        {
+            var dir = Path.Combine(Android.OS.Environment.ExternalStorageDirectory.Path, "token.dat");
+            using (FileStream stream = new FileStream(dir, FileMode.Open, FileAccess.Read))
+            using (StreamReader reader = new StreamReader(stream))
+              return reader.ReadLine().Split(':')[1];
+        }
+
         public static bool ProcessLogin(string email, string password)
         {
             byte[] userToken = new MD5CryptoServiceProvider().ComputeHash(
